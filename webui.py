@@ -158,7 +158,7 @@ if __name__ == "__main__":
         print('build_webui 호출')
         demo = build_webui()
         print('demo.launch() 호출')
-        demo.launch()
+        demo.launch(server_name="0.0.0.0", server_port=7860)
     except Exception as e:
         import traceback
         print("실행 중 오류 발생:", e)
